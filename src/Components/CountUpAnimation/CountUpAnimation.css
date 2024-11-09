@@ -1,0 +1,31 @@
+
+/* parellar */
+.cta-bg {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    
+  }
+  
+  .parallax {
+    background-attachment: fixed; 
+    background-position: center center;
+    background-size: cover;
+  }
+  
+
+  
+  .counter-content i {
+    font-size: 3rem; 
+  }
+  
+  @media (max-width: 768px) {
+    .counter-content {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .counter-content i {
+      font-size: 2rem; /* Smaller icons on mobile */
+    }
+  }
+  

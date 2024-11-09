@@ -1,0 +1,17 @@
+/* Custom style for Slick dots */
+.slick-dots li button:before {
+    color: white; /* Default dot color */
+    font-size: 12px;  /* Default dot size */
+  }
+  
+  .slick-dots .slick-active button:before {
+    color: #FFA500; /* Active dot color (orange) */
+    font-size: 14px;  /* Active dot size */
+  }
+  
+  /* Hover effect on dots */
+  .slick-dots li button:hover:before {
+    color: #FFD700; /* Hover color */
+    font-size: 14px;  /* Hover size */
+  }
+  
