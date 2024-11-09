@@ -14,11 +14,11 @@ import Contect from "./Pages/Contect.jsx";
 function App() {
   const [isReady, setIsReady] = useState(false);
 
-  // Set a 2-second delay before showing the content
+  // Set a 2.5-second delay before showing the content
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsReady(true);
-    }, 2500); // 2 seconds
+    }, 2500);
 
     return () => clearTimeout(timer); // Cleanup the timer when the component unmounts
   }, []);
@@ -26,27 +26,24 @@ function App() {
   return (
     <>
       <Router>
-      <Navbar/>
-        {/* Scroll to the top when the component mounts (page change) */}
-        {/* <ScrollTop />  */}
-        {/* <TopNavbar /> */}
-        {/* Conditionally render components after 2 seconds */}
+        {/* Conditionally render components after 2.5 seconds */}
         {isReady ? (
-          
-          <Suspense fallback={<Loader />}>
-            <Routes>
-              <Route path="/" element={<MainPage />} />  
-            
-              <Route path="/about" element={<About/>}/>      
-              <Route path="/all-teachers" element={<AllTeachers />} />
-              <Route path="/joinEvent" element={<JoinEventForm/>}/>
-              <Route path="/blog" element={<Blog/>}/>
-              <Route path="/contect" element={<Contect/>}/>
-            </Routes>
-            <Footer />
-          </Suspense>
+          <>
+            <Navbar /> {/* Navbar now renders only after isReady is true */}
+            <Suspense fallback={<Loader />}>
+              <Routes>
+                <Route path="/" element={<MainPage />} />  
+                <Route path="/about" element={<About />} />      
+                <Route path="/all-teachers" element={<AllTeachers />} />
+                <Route path="/joinEvent" element={<JoinEventForm />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/contect" element={<Contect />} />
+              </Routes>
+              <Footer />
+            </Suspense>
+          </>
         ) : (
-          <Loader /> 
+          <Loader /> // Loader displayed while waiting
         )}
       </Router>
     </>
