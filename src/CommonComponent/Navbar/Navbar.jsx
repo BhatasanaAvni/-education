@@ -148,6 +148,7 @@ const Navbar = () => {
       {menuOpen && (
         <div className="fixed right-0 top-24 h-[80vh] w-64 bg-customOrange text-white p-7 z-50 " style={{borderRadius:"50px 0 50px 50px"}}>
           <ul className="space-y-4 flex flex-col">
+          <a className="font-bold" href="#">Home</a>
             <a className="font-bold" href="#about">About Us</a>
             <a className="font-bold" href="#Courses">Courses</a>
             <a className="font-bold" href="#Teachers">Teachers</a>
