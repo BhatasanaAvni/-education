@@ -1,4 +1,5 @@
 import React from "react";
+import { useInView } from 'react-intersection-observer'; // Import the hook
 import Feature from "./Feature";
 import { FaGraduationCap, FaMoneyBillWave, FaBook, FaUsers } from "react-icons/fa";
 
@@ -11,28 +12,25 @@ const FeaturesSection = () => {
       description: "It is a long established fact that a reader will be distracted."
     },
     {
-      icon: <FaMoneyBillWave size={30} />,
-      title: "Financial Aid",
-      number: "02",
-      description: "We provide financial assistance to deserving students."
-    },
-    {
       icon: <FaBook size={30} />,
       title: "Courses Offered",
-      number: "03",
+      number: "02",
       description: "Our wide range of courses can help you achieve your goals."
     },
     {
       icon: <FaUsers size={30} />,
       title: "Student Support",
-      number: "04",
+      number: "03",
       description: "We offer continuous support to our students throughout their journey."
     }
   ];
 
   return (
-    <div className=" mx-auto mt-10">
-      <div className="flex justify-between gap-5 flex-wrap " style={{marginTop:"-8%" , marginLeft:"35% "}}>
+    <div className="mx-auto mt-10">
+      <div
+        className="flex justify-between gap-5 flex-wrap ml-[0] sm:ml-[35%]"
+        style={{ marginTop: "-8%" }}
+      >
         {featuresData.map((feature, index) => (
           <Feature
             key={index}

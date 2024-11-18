@@ -26,16 +26,16 @@ const BlogCard = ({ Blog }) => {
 
         <div className="flex items-center gap-5 mt-4">
           <div>
-            <div className="flex items-center gap-2 text-xl  group hover:text-customOrange">
-              <IoMdBookmarks className="group-hover:text-customOrange transition-colors duration-300" />
-              <h5 className=" font-bold group-hover:text-customOrange transition-colors duration-300">
+            <div className="flex items-center gap-2 text-xl  group hover:text-customBlue">
+              <IoMdBookmarks className= " group-hover:text-customGold transition-colors duration-300 text-customBlue" />
+              <h5 className=" font-bold group-hover:text-customGold transition-colors duration-300 text-customBlue">
                 {Name}
               </h5>
             </div>
 
             <div className="flex items-center gap-2 text-xl group hover:text-customOrange">
-              <FaRegComments className="group-hover:text-customOrange transition-colors duration-300" />
-              <h5 className=" font-bold group-hover:text-customOrange transition-colors duration-300">
+              <FaRegComments className="group-hover:text-customGold transition-colors duration-300 text-customBlue" />
+              <h5 className=" font-bold group-hover:text-customGold transition-colors duration-300 text-customBlue">
                 {Comments}
               </h5>
             </div>
@@ -44,7 +44,7 @@ const BlogCard = ({ Blog }) => {
 
         <hr className="my-4" />
         <div className="group">
-          <p className="mt-2 text-[18px] group-hover:text-customOrange transition-colors duration-300 ">
+          <p className="mt-2 text-[18px] group-hover:text-customGold   transition-colors duration-300 ">
             {description}
           </p>
         </div>
@@ -55,7 +55,7 @@ const BlogCard = ({ Blog }) => {
           </Link>
         </div>
 
-        <div className="absolute right-1 top-12 bg-customOrange text-white rounded-customRoundedBtn p-2 flex items-center gap-2 font-bold">
+        <div className="absolute right-1 top-12 bg-customBlue text-white rounded-customRoundedBtn p-2 flex items-center gap-2 font-bold">
           <SlCalender className="font-bold text-2xl" />
           <p>{Date}</p>
         </div>

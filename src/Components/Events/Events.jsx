@@ -69,14 +69,14 @@ const Events = () => {
   return (
     <section className="container" id="Events">
       <div className="text-center">
-      <div className="flex justify-center items-center text-2xl gap-2 text-customOrange">
-        <h3 className="flex items-center justify-center text-2xl border-b-4 border-customOrange gap-4 tracking-[4px] font-semibold">
+      <div className="flex justify-center items-center text-2xl gap-2 text-customGold">
+        <h3 className="flex items-center justify-center text-2xl border-b-4 border-customGold gap-4 tracking-[4px] font-semibold">
             <FaBookOpenReader />
             Events
           </h3>
           </div>
         <h2 className="text-5xl font-bold my-4">
-          Our Upcoming <span className="text-customOrange">Events</span>
+          Our Upcoming <span className="text-customGold">Events</span>
         </h2>
         <p className="text-contentColor text-xl w-full md:max-w-[50%] font-semibold mx-auto">
           It is a long established fact that a reader will be distracted by

@@ -49,7 +49,7 @@ const ContactForm = () => {
     <div className="flex flex-col md:flex-row gap-10 p-6 bg-gray-50 rounded-md shadow-lg max-w-4xl mx-auto">
       {/* Image Section on Left */}
       <div className="w-full md:w-1/2 flex justify-center md:justify-start relative">
-        <img src={FormImg} alt="Contact" className="shadow-md w-full md:w-11/12 h-auto object-cover border-b-8 border-t-8 border-customOrange rounded-customRoundeImg " />
+        <img src={FormImg} alt="Contact" className="shadow-md w-full md:w-11/12 h-auto object-cover border-b-8 border-t-8 border-customGold rounded-customRoundeImg " />
       </div>
 
       {/* Form Section on Right */}
@@ -118,3 +118,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+

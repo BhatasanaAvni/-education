@@ -10,5 +10,11 @@ body{
     width: 100%;
     max-width: 1250px;
     margin: 0 auto;
+    
    
+}
+@media(max-Width:1024px){
+    .container{
+        padding: 0 5px 0 5px 0;
+    }
 }

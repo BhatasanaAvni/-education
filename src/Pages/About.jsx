@@ -9,13 +9,15 @@ import AboutContent from "../RoutingComponents/About/AboutContent";
 const About = () => {
   return (
     <>
- 
+
+
         <AboutContent />
         <AboutUs />
         <CountUp />
         <Testimonials />
-        <Teachers />      
-  
+        <Teachers />
+    
+
     </>
   );
 };

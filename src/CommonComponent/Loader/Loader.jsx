@@ -1,11 +1,11 @@
 import React from 'react';
-// import Loadergif from '../../Images/Loader.gif';
-import Loadergif from '../../Assetes/Images/BORCELLE-1--unscreen.gif';
+
+import Logo from '../../Assetes/Videos/loder.gif';
 
 const Loader = () => {
     return (
-        <div className='w-full h-screen flex justify-center items-center bg-customgreen'>
-            <img src={Loadergif} alt="loader" className='' />
+        <div className='w-full h-screen flex justify-center items-center bg-customBlue '>
+            <img src={Logo} alt="loader" className='w-[350px]' />
         </div>
     );
 };

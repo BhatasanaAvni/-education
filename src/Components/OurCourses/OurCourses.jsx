@@ -1,30 +1,41 @@
 import React from "react";
 import { FaBookOpenReader } from "react-icons/fa6";
 import CoursesCard from "./CoursesCard";
-import coursesData from "../../Data/coursesData"
+import coursesData from "../../Data/coursesData";
+import { useInView } from 'react-intersection-observer';
+
 const OurCourses = () => {
+  // Using IntersectionObserver to track when the courses grid is in view
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation only once
+    threshold: 0.2, // Trigger when 20% of the component is in the viewport
+  });
+
   return (
     <section className="container" id="Courses">
-      <div className="text-center">
-        <div className="flex justify-center  items-center text-2xl gap-2 text-customOrange ">
-          <h3 className="flex items-center justify-center text-2xl border-b-4 border-customOrange gap-4 tracking-[4px] font-semibold">
+      <div className="text-left">
+        <div className="flex justify-start items-center text-2xl gap-2 text-customGold">
+          <h3 className="flex items-center justify-start text-2xl border-b-4 border-customGold gap-4 tracking-[4px] font-semibold">
             <FaBookOpenReader />
             Our Courses
           </h3>
         </div>
-        <h2 className="text-5xl font-bold my-4">
-          Let's Check Our <span className="text-customOrange">Courses</span>{" "}
+        <h2 className="text-5xl font-bold my-4 text-customBlue">
+          Let's Check Our <span className="text-customGold">Courses</span>
         </h2>
-        <div className="flex justify-center items-center">
-
-        <p className="text-contentColor text-1xl  w-full md:max-w-[40%] font-semibold
-        ">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout.
-        </p>
-          </div>
+        <div className="flex justify-start items-center">
+          <p className="text-contentColor text-xl w-full md:max-w-[40%] font-semibold">
+            It is a long established fact that a reader will be distracted by the
+            readable content of a page when looking at its layout.
+          </p>
+        </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-14">
+
+      {/* Grid layout for courses */}
+      <div
+        ref={ref} 
+        className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 my-14 transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+      >
         {coursesData.map((course) => (
           <CoursesCard key={course.id} course={course} />
         ))}

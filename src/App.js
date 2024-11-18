@@ -1,15 +1,21 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import HeroSection from "./Components/HeroSection/HeroSection.jsx";
 import Footer from "./CommonComponent/Footer/Footer.jsx";
-import Loader from "./CommonComponent/Loader/Loader.jsx";
 import React, { Suspense, lazy, useState, useEffect } from "react";
-import MainPage from "./Pages/MainPage.jsx";
-import About from "./Pages/About.jsx";
-import AllTeachers from "./Components/Teachers/AllTeachers.jsx";
+
+
+
 import Navbar from "./CommonComponent/Navbar/Navbar.jsx";
-import JoinEventForm from "./Auth/JoinEventForm/JoinEventForm.jsx";
-import Blog from "./Pages/Blog.jsx";
-import Contect from "./Pages/Contect.jsx";
+
+
+
+const MainPage = lazy(() => import('./Pages/MainPage.jsx'));
+const About = lazy(() => import('./Pages/About.jsx'));
+const AllTeachers = lazy(() => import('./Components/Teachers/AllTeachers.jsx'));
+const Loader = lazy(() => import('./CommonComponent/Loader/Loader.jsx'));
+const JoinEventForm = lazy(() => import('./Auth/JoinEventForm/JoinEventForm.jsx'));
+const Blog = lazy(() => import('./Pages/Blog.jsx'));
+const Contect = lazy(() => import('./Pages/Contect.jsx'));
+
 
 function App() {
   const [isReady, setIsReady] = useState(false);

@@ -5,9 +5,12 @@ import BlogSection from '../Components/Blog/BlogSection'
 const Blog = () => {
   return (
     <>
- <BlogContent/>
- <BlogSection/>
-    </> 
+  
+
+        <BlogContent />
+        <BlogSection />
+
+    </>
   )
 }
 

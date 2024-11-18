@@ -9,26 +9,27 @@ const ContactFormData = () => {
   const contactData = [
     {
       icon: MdOutlineLocationCity,
-      title: "Office Address",
-      text: "25/B Milford, New York, USA",
-      link: "https://www.google.com/maps/search/?api=1&query=25+B+Milford,+New+York,+USA",
+      title: "Address",
+      text: "Mahuwash, Sara Rd, Vansda, Gujarat 396580",
+      link:"https://maps.app.goo.gl/7tMDbFZNhPp1g1U98",
     },
+
     {
       icon: BiPhoneCall,
       title: "Call Us",
-      text: "+2 123 4565 789",
-      link: "tel:+21234565789",
+      text: "+91 98987 87875",
+      link: "tel:+98987 87875",
     },
     {
       icon: MdMarkEmailRead,
       title: "Email Us",
-      text: "info@example.com",
-      link: "mailto:info@example.com",
+      text: "info@yashcampus.in",
+      link: "mailto:info@yashcampus.in",
     },
     {
       icon: GiClockwork,
       title: "Open Time",
-      text: "Mon - Sat (10.00AM - 05.30PM)",
+      text: "Mon - Sat (09.00AM - 06.00PM)",
       link: "#",
     },
   ];
@@ -49,3 +50,4 @@ const ContactFormData = () => {
 };
 
 export default ContactFormData;
+

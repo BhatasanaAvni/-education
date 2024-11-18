@@ -131,7 +131,7 @@ const JoinEventForm = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white rounded-md shadow-md  my-32">
-      <h2 className="text-3xl font-bold text-center mb-6 text-customOrange">
+      <h2 className="text-3xl font-bold text-center mb-6 text-customGold">
         Student Event Attendance
       </h2>
       <form onSubmit={handleSubmit}>
@@ -145,7 +145,7 @@ const JoinEventForm = () => {
             value={formData.studentName}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-customOrange"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-customGold"
           />
         </div>
 
@@ -158,7 +158,7 @@ const JoinEventForm = () => {
             value={formData.email}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-customOrange"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-customGold"
           />
         </div>
 
@@ -172,7 +172,7 @@ const JoinEventForm = () => {
             value={formData.dob}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-customOrange"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-customGold"
           />
         </div>
 
@@ -196,7 +196,7 @@ const JoinEventForm = () => {
             value={formData.gender}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-customOrange"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-customGold"
           >
             <option value="">Select Gender</option>
             <option value="Male">Male</option>
@@ -214,7 +214,7 @@ const JoinEventForm = () => {
             value={formData.mobile}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-customOrange"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-customGold"
           />
         </div>
         <div className="mb-4">
@@ -225,7 +225,7 @@ const JoinEventForm = () => {
             value={formData.selectedEvent}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-customOrange"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-customGold"
           >
             <option value="">Choose an Event</option>
             {eventData.map((event, index) => (
@@ -245,7 +245,7 @@ const JoinEventForm = () => {
             value={formData.eventType}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-customOrange"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-customGold"
           >
             <option value="">Select Event Type</option>
             <option value="Workshop">Workshop</option>

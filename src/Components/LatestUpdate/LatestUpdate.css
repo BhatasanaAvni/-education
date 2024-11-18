@@ -1,14 +1,5 @@
 /* Play Button Styling */
-.play-btn {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    background-color: rgba(255, 165, 0, 0.9); /* Custom Orange */
-    border-radius: 50%;
-  }
+
   
   /* Full-Screen Modal Video */
   .modal-video {
@@ -36,7 +27,7 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    background-color: rgba(255, 165, 0, 0.9); 
+    background-color: #062237; 
     border-radius: 50%;
   }
     

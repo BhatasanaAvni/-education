@@ -15,70 +15,41 @@ import {
   const DepartmentData = [
     {
       id: 1,
-      name: "Department of Anatomy",
+      name: "Department of Anatomy and Physiology",
       icon: FaHandHoldingMedical,
-      description: "Study of body structures and organs.",
+      description: "Anatomy lab are use in nursing to help students learn about the human body and how it functions in practical, student's can examine muscle, tendons, nerves and vessels up close and student can experience the material they have learn in the classroom in real way.",
     },
     {
       id: 2,
-      name: "Department of Physiology",
+      name: "Department of Community Health Nursing",
       icon: FaHeartbeat,
-      description: "Study of life functions and body systems.",
+      description: "Community health nursing lab ensures that the students learn home visiting bag technique and practice the community health nursing while providing family health care at the door step of the clients using modified home visiting kits.",
     },
     {
       id: 3,
-      name: "Department of Biochemistry",
+      name: "Department of Obstetric and pediatric",
       icon: FaFlask,
-      description: "Study of chemical processes within and relating to living organisms.",
+      description: "Students gain knowledge About pediatrics( Infant , Neonate, Toddler, Schooler , Adolescent etc.)And Obstetrics ( Like, Pre-natal, Post natal etc.) Also Improve Their Skills.",
     },
     {
       id: 4,
-      name: "Department of Pharmacology",
+      name: "Department of Nutrition",
       icon: FaPills,
-      description: "Study of drugs and their effects on the body.",
+      description: "nutrition lab in their curriculum to help students develop the skills and knowledge to support healthy nutrition for their patient.",
     },
     {
       id: 5,
-      name: "Department of Pathology",
+      name: "Department of Fundamental of Nursing",
       icon: FaSkull,
-      description: "Study of diseases and their impact on the body.",
+      description: "This department forms the basis of nursing curriculum. It has an important part in molding students to be responsible, dedicated nurses with good knowledge, attitude and skill. Students practice basics skills, initially in the well equipped foundation of nursing lab under the supervision of faculty. FON lab helps the students to develop confidence in direct patient care during the clinical practice.",
     },
     {
       id: 6,
-      name: "Department of Microbiology",
+      name: "Department of Library",
       icon: FaMicrochip,
-      description: "Study of microorganisms like bacteria, viruses, fungi, and parasites.",
+      description: "libraries are a primary resource for evidence based practice, which is important for nurse who are directly accountable for their practice.",
     },
-    {
-      id: 7,
-      name: "Department of Obstetrics and Gynecology",
-      icon: FaBaby,
-      description: "Specialized in childbirth, pregnancy, and female reproductive health.",
-    },
-    {
-      id: 8,
-      name: "Department of Pediatrics",
-      icon: FaChild,
-      description: "Focuses on the medical care of infants, children, and adolescents.",
-    },
-    {
-      id: 9,
-      name: "Department of Psychiatry",
-      icon: FaBrain,
-      description: "Study of mental health, disorders, and treatments.",
-    },
-    {
-      id: 10,
-      name: "Department of Radiology",
-      icon: FaRadiation,
-      description: "Use of imaging technologies like X-rays, MRIs, and CT scans for diagnosis.",
-    },
-    {
-      id: 11,
-      name: "Department of Forensic Medicine",
-      icon: FaGavel,
-      description: "Application of medical knowledge to legal issues.",
-    },
+   
   ];
   
   export default DepartmentData;

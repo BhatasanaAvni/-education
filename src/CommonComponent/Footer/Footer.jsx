@@ -4,10 +4,10 @@ import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaRegPaperPlane } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { LogoFooter } from "../../Assetes/Images/Image";
+import { Logo } from "../../Assetes/Images/Image";
 import footerbg from "../../Assetes/Images/Goal/01.png";
 
 const Footer = () => {
@@ -20,61 +20,68 @@ const Footer = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-[rgba(1,39,88,0.85)] z-0"></div>
+      <div className="absolute inset-0 bg-customBlue z-0"></div>
       <div className="relative z-10">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="p-6">
-            <img src={LogoFooter} alt="" className="w-28" />
+            <img src={Logo} alt="" className="w-28" />
             <p className="mt-4 text-[15px]">
               We are many variations of passages available but the majority have
               suffered alteration in some form by injected humour words
               believable.
             </p>
-            <div className="mt-4 space-y-2">
-              <p className="flex items-center">
-                <span className="mr-2 text-lg p-[8px] bg-customOrange rounded-customRounded">
+            <div className="mt-4 space-y-2 cursor-pointer">
+              <a href="tel:+98987 87875" className="flex items-center">
+                <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
                   <IoCallOutline />
                 </span>
-                +2 123 654 7898
-              </p>
-              <p className="flex items-center">
-                <span className="mr-2 text-lg p-[8px] bg-customOrange rounded-customRounded">
+                +91 98987 87875
+              </a>
+             
+              <a
+                className="flex items-center"
+                href="https://maps.app.goo.gl/7tMDbFZNhPp1g1U98" 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
                   <IoLocationOutline />
                 </span>
-                25/B Milford Road, New York
-              </p>
-              <p className="flex items-center">
-                <span className="mr-2 text-lg p-[8px] bg-customOrange rounded-customRounded">
+                Mahuwash, Sara Rd, Vansda, Gujarat 396580
+              </a>
+
+              <a href="mailto:info@yashcampus.in" className="flex items-center" >
+                <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
                   <MdOutlineEmail />
                 </span>
-                info@example.com
-              </p>
+                info@yashcampus.in
+              </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="p-6">
-            <h3 className="text-2xl md:text-3xl font-semibold text-customOrange pb-2">
+            <h3 className="text-2xl md:text-3xl font-semibold text-customGold pb-2">
               <u>Quick Links</u>
             </h3>
             <ul className="space-y-2 text-[18px] pt-3">
-              <li className="hover:translate-x-2 transition-all duration-300">
+              <li className="hover:translate-x-2 transition-all duration-300 hover:text-customGold">
                 About Us
               </li>
-              <li className="hover:translate-x-2 transition-all duration-300">
+              <li className="hover:translate-x-2 transition-all duration-300 hover:text-customGold">
                 FAQ's
               </li>
-              <li className="hover:translate-x-2 transition-all duration-300">
+              <li className="hover:translate-x-2 transition-all duration-300 hover:text-customGold">
                 Testimonials
               </li>
-              <li className="hover:translate-x-2 transition-all duration-300">
+              <li className="hover:translate-x-2 transition-all duration-300 hover:text-customGold">
                 Terms Of Service
               </li>
-              <li className="hover:translate-x-2 transition-all duration-300">
+              <li className="hover:translate-x-2 transition-all duration-300 hover:text-customGold">
                 Privacy Policy
               </li>
-              <li className="hover:translate-x-2 transition-all duration-300">
+              <li className="hover:translate-x-2 transition-all duration-300 hover:text-customGold">
                 Update News
               </li>
             </ul>
@@ -82,26 +89,26 @@ const Footer = () => {
 
           {/* Our Campus */}
           <div className="p-6">
-            <h3 className="text-2xl md:text-3xl font-semibold text-customOrange pb-2">
+            <h3 className="text-2xl md:text-3xl font-semibold text-customGold pb-2">
               <u>Our Campus</u>
             </h3>
             <ul className="space-y-2 text-[18px] pt-3">
-              <li className="hover:translate-x-2 transition-all duration-300">
+              <li className="hover:translate-x-2 transition-all duration-300 hover:text-customGold">
                 Campus Safety
               </li>
-              <li className="hover:translate-x-2 transition-all duration-300">
+              <li className="hover:translate-x-2 transition-all duration-300 hover:text-customGold">
                 Student Activities
               </li>
-              <li className="hover:translate-x-2 transition-all duration-300">
+              <li className="hover:translate-x-2 transition-all duration-300 hover:text-customGold">
                 Academic Department
               </li>
-              <li className="hover:translate-x-2 transition-all duration-300">
+              <li className="hover:translate-x-2 transition-all duration-300 hover:text-customGold">
                 Planning & Administration
               </li>
-              <li className="hover:translate-x-2 transition-all duration-300">
+              <li className="hover:translate-x-2 transition-all duration-300 hover:text-customGold">
                 Office Of The Chancellor
               </li>
-              <li className="hover:translate-x-2 transition-all duration-300">
+              <li className="hover:translate-x-2 transition-all duration-300 hover:text-customGold">
                 Facility Services
               </li>
             </ul>
@@ -109,7 +116,7 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div className="p-6">
-            <h3 className="text-2xl md:text-3xl font-semibold text-customOrange pb-2">
+            <h3 className="text-2xl md:text-3xl font-semibold text-customGold pb-2">
               <u>Newsletter</u>
             </h3>
             <p className="text-xl pt-3 mb-4">
@@ -119,11 +126,11 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your Email"
-                className="p-2 mb-4 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="p-2 mb-4 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-customGold"
               />
               <button
                 type="submit"
-                className="bg-customOrange text-white px-5 py-3 rounded-customRoundedBtn flex items-center justify-center"
+                className="bg-customGold text-white px-5 py-3 rounded-customRoundedBtn flex items-center justify-center"
               >
                 SUBSCRIBE NOW{" "}
                 <span className="ml-2">
@@ -135,33 +142,39 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="max-w-6xl mx-auto mt-10 text-center border-t border-customOrange pt-4 flex justify-between items-center flex-wrap">
+        <div className="max-w-6xl mx-auto mt-10 text-center border-t border-customGold pt-4 flex justify-between items-center flex-wrap">
           <p className="text-xl text-white">
             &copy; Copyright 2024{" "}
-            <span className="text-customOrange">Bright</span>. All Rights Reserved.
+            <span className="text-customGold " href="#">Yash Campus</span>. All Rights Reserved. D&D by <a href="https://vaanyawebservice.com/ " className="text-customGold">VWS</a>
           </p>
           <div className="flex justify-center space-x-4 mt-4 text-xl">
             <a
-              href="#"
-              className="text-customOrange hover:text-white p-[8px] bg-white hover:bg-customOrange duration-500 rounded-customRounded"
+              href="https://www.facebook.com/yashcampuss"
+              target="_blank"
+              className="text-customGold hover:text-white p-[8px] bg-white hover:bg-customGold duration-500 rounded-customRounded"
             >
               <FaFacebookF />
             </a>
             <a
-              href="#"
-              className="text-customOrange hover:text-white p-[8px] bg-white hover:bg-customOrange duration-500 rounded-customRounded"
+            target="_blank"
+              href="https://www.instagram.com/yashcampuss/"
+              className="text-customGold hover:text-white p-[8px] bg-white hover:bg-customGold duration-500 rounded-customRounded"
             >
-              <FaLinkedinIn />
+              <FaInstagram />
             </a>
             <a
-              href="#"
-              className="text-customOrange hover:text-white p-[8px] bg-white hover:bg-customOrange duration-500 rounded-customRounded"
+              href="https://wa.me/9898787875"
+              className="text-customGold hover:text-white p-[8px] bg-white hover:bg-customGold duration-500 rounded-customRounded"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaWhatsapp />
             </a>
+
             <a
+            target="_blank"
               href="#"
-              className="text-customOrange hover:text-white p-[8px] bg-white hover:bg-customOrange duration-500 rounded-customRounded"
+              className="text-customGold hover:text-white p-[8px] bg-white hover:bg-customGold duration-500 rounded-customRounded"
             >
               <FaYoutube />
             </a>

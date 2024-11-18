@@ -14,7 +14,7 @@ const Testimonials = () => {
     infinite: true,  // Ensures the slider loops infinitely
     speed: 500,  // Controls the speed of the slide transition (in ms)
     autoplay: true,  // Enable autoplay
-    autoplaySpeed: 1500,  // Auto transition every 2 seconds
+    autoplaySpeed: 1000,  // Auto transition every 2 seconds
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,  // Remove left and right buttons
@@ -46,14 +46,14 @@ const Testimonials = () => {
 
       {/* Content */}
       <div className="relative text-center z-10 px-4 md:px-0">
-        <div className="flex justify-center items-center text-2xl gap-2 text-customOrange">
-          <h3 className="flex items-center justify-center text-2xl border-b-4 border-customOrange gap-4 tracking-[4px] font-semibold">
+        <div className="flex justify-center items-center text-2xl gap-2 text-customGold">
+          <h3 className="flex items-center justify-center text-2xl border-b-4 border-customGold gap-4 tracking-[4px] font-semibold">
             <FaBookOpenReader />
             Testimonials
           </h3>
         </div>
         <h2 className="text-5xl font-bold my-4">
-          What Our Students <span className="text-customOrange">Say's</span>
+          What Our Students <span className="text-customGold">Say's</span>
         </h2>
         <div className="flex justify-center items-center">
           <p className="text-white text-lg md:max-w-[40%] font-semibold">

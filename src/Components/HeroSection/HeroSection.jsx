@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
-  Campus1,
-  Campus2,
-  Campus3,
+  Campus11,Campus12,Campus13
 } from "../../Assetes/Images/HeroSection/Heroimg";
 import Button from "../../CommonComponent/Btn/Button";
 import { Link } from "react-router-dom";
@@ -12,19 +10,19 @@ const HeroSection = () => {
   // Array of data for images, headings, and content
   const images = [
     {
-      src: Campus1,
+      src: Campus11,
       heading: "Welcome to Our Service",
       content:
         "At BRIGHT, we provide essential medical services to support the health and well-being of our community..",
     },
     {
-      src: Campus2,
+      src: Campus12,
       heading: "Transform Your Experience",
       content:
         "At BRIGHT, gain hands-on experience, world-class training, and expert mentorship to shape your future in healthcare.",
     },
     {
-      src: Campus3,
+      src: Campus13,
       heading: "Discover New Possibilities",
       content:
         "At BRIGHT, we open doors to a world of opportunities in medical education, research, and healthcare careers, empowering you to make a difference..",
@@ -58,21 +56,21 @@ const HeroSection = () => {
   return (
     <>
       <section
-        className="relative w-full h-screen bg-cover bg-center"
+        className="relative w-full h-screen bg-cover bg-center" id="#"
         style={{ backgroundImage: `url(${images[currentImageIndex].src})` }}
       >
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
         <div className="absolute top-[85%] ">
           <button
             onClick={goToPreviousImage}
-            className="absolute left-10 text-4xl w-30 h-30 border-none cursor-pointer p-2 rounded-customRoundedBtnPrevious  bg-white text-[#116e63]  hover:bg-heroBackground hover:text-black transition-all duration-300"
+            className="absolute left-10 text-4xl w-30 h-30 border-none cursor-pointer p-2 rounded-customRoundedBtnPrevious hover:bg-customBlue hover:text-customGold bg-heroBackground text-customBlue transition-all duration-300"
           >
             &#8592;
           </button>
 
           <button
             onClick={goToNextImage}
-            className="absolute left-32 text-4xl w-30 h-30  bg-white text-[#116e63] border-none cursor-pointer p-2 rounded-customRoundedBtnNext hover:bg-heroBackground hover:text-black transition-all duration-300"
+            className="absolute left-32 text-4xl w-30 h-30 border-none cursor-pointer p-2 rounded-customRoundedBtnNext hover:bg-customBlue hover:text-customGold bg-heroBackground text-customBlue transition-all duration-300"
           >
             &#8594;
           </button>

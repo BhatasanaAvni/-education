@@ -22,7 +22,7 @@ const CoursesCard = ({ course }) => {
   return (
     <>
       <div className="p-7 bg-white rounded-customRoundedBtn mt-5 relative">
-        <div className="relative overflow-hidden rounded-customRoundedBtn w-full h-48">
+        <div className="relative overflow-hidden rounded-customRoundedBtn w-full h-56">
           <img
             src={image}
             alt={title}
@@ -35,7 +35,7 @@ const CoursesCard = ({ course }) => {
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white text-2xl p-3 rounded-full bg-customOrange hover:bg-white hover:text-customOrange transition-colors duration-300"
+              className="text-customGold text-2xl p-3 rounded-full bg-customBlue hover:bg-white hover:text-customBlue transition-colors duration-300"
             >
               <FaLink />
             </a>
@@ -43,10 +43,10 @@ const CoursesCard = ({ course }) => {
         </div>
         <div className="flex items-center gap-5 mt-4">
           <div className="flex items-center gap-2">
-            <IoMdBookmarks className="text-customOrange" />
+            <IoMdBookmarks className="text-customBlue" />
             <h5 className="text-contentColor font-bold">{lessons}</h5>
           </div>
-          <div className="flex items-center gap-1 text-customOrange">
+          {/* <div className="flex items-center gap-1 text-customGold">
             {[...Array(Math.floor(rating))].map((_, i) => (
               <FaStar key={i} />
             ))}
@@ -54,27 +54,27 @@ const CoursesCard = ({ course }) => {
             <span className="text-contentColor ml-1">
               ({rating.toFixed(1)})
             </span>
-          </div>
+          </div> */}
         </div>
-        <h2 className="text-xl font-semibold mt-2">{title}</h2>
+        <h2 className="text-xl font-semibold text-customBlue mt-2">{title}</h2>
         <p className="text-gray-500 mt-2">{description}</p>
         <hr className="my-4" />
         <div className="flex justify-between items-center">
           <div className="flex gap-4 text-xl">
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 text-customGold transition hover:text-customBlue">
               <MdGroups />
               <span>{seats} Seats</span>
             </div>
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 text-customGold transition hover:text-customBlue">
               <CiClock1 />
               <span>{duration} Years</span>
             </div>
           </div>
-          <div className="bg-customOrange p-2 text-white font-bold rounded-customRoundedBtn">
+          {/* <div className="bg-customBlue p-2 text-white font-bold rounded-customRoundedBtn">
             <p>${price}</p>
-          </div>
+          </div> */}
         </div>
-        <div className="absolute right-1 top-12 bg-customOrange  text-white rounded-customRoundedBtn p-2 flex items-center gap-1 font-bold">
+        <div className="absolute right-1 top-12 bg-customBlue  text-white rounded-customRoundedBtn p-2 flex items-center gap-1 font-bold">
           <CiBookmark className="font-bold text-2xl"  />
           <p>{courseDepartment}</p>
         </div>

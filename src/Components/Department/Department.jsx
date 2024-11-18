@@ -73,14 +73,14 @@ const Department = () => {
   return (
     <section className="container overflow-x-hidden py-16" id="Department">
       <div className="text-center">
-        <div className="flex justify-center items-center text-2xl gap-2 text-customOrange">
-          <h3 className="flex items-center text-2xl border-b-4 border-customOrange gap-4 tracking-[4px] font-semibold">
+        <div className="flex justify-center items-center text-2xl gap-2 text-customGold">
+          <h3 className="flex items-center text-2xl border-b-4 border-customGold gap-4 tracking-[4px] font-semibold">
             <FaBookOpenReader />
             Department
           </h3>
         </div>
-        <h2 className="text-5xl font-bold my-4">
-          Browse Our <span className="text-customOrange">Department</span>
+        <h2 className="text-5xl font-bold my-4 text-customBlue">
+          Browse Our <span className="text-customGold">Department</span>
         </h2>
         <div className="flex justify-center items-center">
           <p className="text-contentColor text-1xl w-full md:max-w-[50%] font-semibold">

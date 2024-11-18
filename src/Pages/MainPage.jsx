@@ -26,10 +26,10 @@ const MainPage = () => {
    <Teachers/>
    <Goal/>
    <Gallery/>
-   <Events/>
+   {/* <Events/> */}
    <Department/>
    <Testimonials/>
-   <Blog/>
+   {/* <Blog/> */}
 
     </>
 
