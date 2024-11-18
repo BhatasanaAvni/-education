@@ -1,74 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBookOpenReader } from "react-icons/fa6";
-import Slider from "react-slick";
-
-import DepartmentList from "./DepartmentList";
+import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from "react-accessible-accordion";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import "react-accessible-accordion/dist/fancy-example.css"; // Optional default styles
 import DepartmentData from "../../Data/DepartmentData";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-// Custom Previous Arrow Button
-const PrevArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <button
-      onClick={onClick}
-      className="slick-prev custom-arrow"
-      style={{ position: "absolute", top: "50%", left: "-30px", zIndex: 1 }}
-    >
-      &lt;
-    </button>
-  );
-};
-
-// Custom Next Arrow Button
-const NextArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <button
-      onClick={onClick}
-      className="slick-next custom-arrow"
-      style={{ position: "absolute", top: "50%", right: "-30px", zIndex: 1 }}
-    >
-      &gt;
-    </button>
-  );
-};
 
 const Department = () => {
-  const settings = {
-    dots: false, // Remove the dots by setting it to false
-    infinite: true,
-    speed: 500,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    centerMode: true,
-    centerPadding: "20px",
+  const [activeIndex, setActiveIndex] = useState(null);
 
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          centerPadding: "20px", // Adjust space for medium screens
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: "20px", // Adjust space for small screens
-        },
-      },
-    ],
+  const handleAccordionToggle = (index) => {
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
+
+  if (!DepartmentData || DepartmentData.length === 0) {
+    return (
+      <section className="container py-16 text-center">
+        <h2 className="text-2xl text-customBlue">No Departments Available</h2>
+      </section>
+    );
+  }
+
+  // Split data into two halves
+  const leftSideData = DepartmentData.slice(0, 3);
+  const rightSideData = DepartmentData.slice(3, 6);
 
   return (
     <section className="container overflow-x-hidden py-16" id="Department">
@@ -89,20 +43,63 @@ const Department = () => {
           </p>
         </div>
       </div>
-      <div className="relative z-10 gap-3 container">
-        <Slider {...settings}>
-          {DepartmentData.map((department) => (
-            <div key={department.id} className="px-3">
-              {" "}
-              {/* Add padding around each card */}
-              <DepartmentList
-                name={department.name}
-                icon={department.icon}
-                description={department.description}
-              />
-            </div>
-          ))}
-        </Slider>
+      <div className="relative z-10 container grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Left Side Accordion */}
+        <div>
+          <Accordion allowZeroExpanded>
+            {leftSideData.map((department, index) => (
+              <AccordionItem key={department.id}>
+                <AccordionItemHeading>
+                  <AccordionItemButton
+                    onClick={() => handleAccordionToggle(index)}
+                    className="flex items-center justify-between text-lg font-bold bg-customBlue text-white p-4 rounded-md hover:bg-customGreen transition"
+                  >
+                    <div className="flex items-center gap-2">
+                      {department.icon}
+                      {department.name}
+                    </div>
+                    {activeIndex === index ? (
+                      <FaChevronUp className="text-white" />
+                    ) : (
+                      <FaChevronDown className="text-white" />
+                    )}
+                  </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel className="bg-gray-100 p-4 rounded-md mt-2 text-contentColor">
+                  {department.description}
+                </AccordionItemPanel>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+        {/* Right Side Accordion */}
+        <div>
+          <Accordion allowZeroExpanded>
+            {rightSideData.map((department, index) => (
+              <AccordionItem key={department.id}>
+                <AccordionItemHeading>
+                  <AccordionItemButton
+                    onClick={() => handleAccordionToggle(index + 3)}
+                    className="flex items-center justify-between text-lg font-bold bg-customBlue text-white p-4 rounded-md hover:bg-customGreen transition"
+                  >
+                    <div className="flex items-center gap-2">
+                      {department.icon}
+                      {department.name}
+                    </div>
+                    {activeIndex === index + 3 ? (
+                      <FaChevronUp className="text-white" />
+                    ) : (
+                      <FaChevronDown className="text-white" />
+                    )}
+                  </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel className="bg-gray-100 p-4 rounded-md mt-2 text-contentColor">
+                  {department.description}
+                </AccordionItemPanel>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
       </div>
     </section>
   );
