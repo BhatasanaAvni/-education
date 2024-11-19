@@ -13,20 +13,19 @@ const OurCourses = () => {
 
   return (
     <section className="container" id="Courses">
-      <div className="text-left">
+      <div className="flex flex-col justify-center items-center">
         <div className="flex justify-start items-center text-2xl gap-2 text-customGold">
           <h3 className="flex items-center justify-start text-2xl border-b-4 border-customGold gap-4 tracking-[4px] font-semibold">
             <FaBookOpenReader />
             Our Courses
           </h3>
         </div>
-        <h2 className="text-5xl font-bold my-4 text-customBlue">
+        <h2 className="text-5xl font-bold my-4 text-customBlue text-center">
           Let's Check Our <span className="text-customGold">Courses</span>
         </h2>
-        <div className="flex justify-start items-center">
-          <p className="text-contentColor text-xl w-full md:max-w-[40%] font-semibold">
-            It is a long established fact that a reader will be distracted by the
-            readable content of a page when looking at its layout.
+        <div className="flex justify-center  items-center">
+          <p className="text-contentColor text-xl w-full md:max-w-[70%]  text-center">
+          <sapn className="text-customBlue font-bold">YASH CAMPUS</sapn> College offers specialized programs in General Nursing and Midwifery (GNM) and Auxiliary Nurse Midwifery (ANM), designed to equip students with the knowledge and skills needed for a successful career in healthcare.
           </p>
         </div>
       </div>

@@ -46,9 +46,8 @@ const Gallery = () => {
           Our Photo <span className="text-customGold">Gallery</span>
         </h2>
         <div className="flex justify-center items-center">
-          <p className="text-contentColor text-xl w-full md:max-w-[50%] font-semibold">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+          <p className="text-contentColor text-xl w-full md:max-w-[50%] ">
+          Explore our <sapn className="text-customBlue font-bold">YASH CAMPUS</sapn> life through our photo gallery. See the moments that make <sapn className="text-customBlue font-bold">YASH CAMPUS</sapn> College a place of learning, growth, and community.
           </p>
         </div>
 

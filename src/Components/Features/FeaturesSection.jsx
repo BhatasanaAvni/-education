@@ -9,19 +9,19 @@ const FeaturesSection = () => {
       icon: <FaGraduationCap size={30} />,
       title: "Scholarship Facility",
       number: "01",
-      description: "It is a long established fact that a reader will be distracted."
+      description: "Yash Campus College offers scholarships to support talented and deserving students. Unlock your potential with financial assistance for a brighter future."
     },
     {
       icon: <FaBook size={30} />,
       title: "Courses Offered",
       number: "02",
-      description: "Our wide range of courses can help you achieve your goals."
+      description: "Yash Campus College offers a variety of programs, including undergraduate, postgraduate, professional courses, and skill-based diplomas, to shape your future."
     },
     {
       icon: <FaUsers size={30} />,
       title: "Student Support",
       number: "03",
-      description: "We offer continuous support to our students throughout their journey."
+      description: "Yash Campus College offers complete support through academic counseling, career guidance, and extracurricular activities, ensuring every student’s success."
     }
   ];
 

@@ -1,4 +1,4 @@
-import aboutus01 from "./aboutus01.jpg"
+import aboutus01 from "./aboutus01.jpeg"
 import aboutus02 from "./aboutus02.jpg"
 import aboutus03 from "./aboutus03.jpg"
 // import exchange from "./exchange-idea.jpg"

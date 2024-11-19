@@ -26,13 +26,12 @@ const AboutUs = () => {
   });
 
   return (
-    <div className="container mx-auto px-4 py-10" id="about">
+    <div className="container mx-auto px-4 py-8" id="about">
       <div className="flex flex-col md:flex-row gap-8 items-center">
         {/* Image Section */}
         <div
-          className={`flex flex-col gap-4 md:gap-8 md:flex-row md:w-1/2 transition-transform duration-700 ${
-            imageInView ? "transform translate-x-0 opacity-100" : "transform -translate-x-10 opacity-0"
-          }`}
+          className={`flex flex-col gap-4 md:gap-8 md:flex-row md:w-1/2 transition-transform duration-700 ${imageInView ? "transform translate-x-0 opacity-100" : "transform -translate-x-10 opacity-0"
+            }`}
           ref={imageRef} // Attach the image section to the intersection observer
         >
           <div className="flex flex-col items-center">
@@ -68,9 +67,8 @@ const AboutUs = () => {
         {/* Text Section */}
         <div
           ref={contentRef} // Attach the content section to the intersection observer
-          className={`w-full max-w-md md:max-w-lg md:w-1/2 text-center md:text-left transition-transform duration-700 ${
-            contentInView ? "transform translate-x-0 opacity-100" : "transform translate-x-10 opacity-0"
-          }`}
+          className={`w-full max-w-md md:max-w-lg md:w-1/2 text-center md:text-left transition-transform duration-700 ${contentInView ? "transform translate-x-0 opacity-100" : "transform translate-x-10 opacity-0"
+            }`}
         >
           <div className="flex justify-center md:justify-start items-center text-2xl gap-2 text-customGold ">
             <div className="flex justify-center items-center border-b-4 border-customGold gap-4 tracking-[4px] font-semibold">
@@ -85,10 +83,7 @@ const AboutUs = () => {
           </h2>
 
           <p className="text-contentColor pt-6 md:pt-10">
-            There are many variations of passages available, but the majority
-            have suffered alteration in some form by injected humour or
-            randomized words, which don't look even slightly believable. If you
-            are going to use a passage.
+           <sapn className="text-customBlue font-bold">YASH CAMPUS</sapn>  College is committed to providing quality education in the field of healthcare. We offer specialized programs like General Nursing and Midwifery (GNM) and Auxiliary Nurse Midwifery (ANM), designed to equip students with the essential skills and knowledge to excel in the nursing profession.
           </p>
           <div className="flex flex-col justify-center items-center lg:flex-row gap-6 lg:gap-9 mt-5">
             {/* Left Column */}
@@ -100,8 +95,7 @@ const AboutUs = () => {
                 <div>
                   <h4 className="text-2xl font-semibold">Bright Services</h4>
                   <p className="mt-1 text-lg text-contentColor">
-                    It is a long established fact that reader will to using
-                    content.
+                  <sapn className="font-bold">YASH CAMPUS</sapn> College provides career counseling, placement assistance, and skill development to help students succeed..
                   </p>
                 </div>
               </div>
@@ -122,9 +116,7 @@ const AboutUs = () => {
             {/* Right Column */}
             <div className="lg:w-[35%] w-full bg-customLightGold  p-4 md:p-6 rounded-2xl text-customBlue text-lg border-2 border-dashed border-customBlue hover:-translate-y-2 transition-transform duration-300 relative">
               <p>
-                It is a long established fact that a reader will be distracted
-                by the content of a page when looking at its reader for the long
-                words layout.
+                With top-notch facilities, expert faculty, and practical training, <sapn className="text-customBlue font-bold">YASH CAMPUS</sapn> prepares students to excel in healthcare and make a meaningful impact in patient care.
               </p>
               <p className="absolute right-3  text-4xl text-customBlue">66</p>
             </div>
@@ -132,17 +124,17 @@ const AboutUs = () => {
           <hr className="my-6" />
 
           <div className="flex justify-center items-center gap-5 md:justify-start mt-5 flex-col md:flex-row">
-            <Link to="/about">
+            <Link to="/about ">
               <Button>DISCOVER MORE</Button>
             </Link>
             <div className="flex gap-3 items-center">
-              <a href="tel:+919989878965" className="flex gap-3 items-center">
+              <a href="tel:+9898787875" className="flex gap-3 items-center">
                 <div className="bg-customBlue p-2 rounded-customRoundedBtnNext text-3xl text-customGold">
                   <MdWifiCalling3 />
                 </div>
                 <div>
                   <p className="text-customGold text-xl font-bold">Call Now</p>
-                  <p className="text-customBlue text-xl font-bold">+91 99898 78965</p>
+                  <p className="text-customBlue text-xl font-bold">+91 9898787875</p>
                 </div>
               </a>
             </div>

@@ -49,7 +49,7 @@ const Testimonials = () => {
         <div className="flex justify-center items-center text-2xl gap-2 text-customGold">
           <h3 className="flex items-center justify-center text-2xl border-b-4 border-customGold gap-4 tracking-[4px] font-semibold">
             <FaBookOpenReader />
-            Testimonials
+            Reviews
           </h3>
         </div>
         <h2 className="text-5xl font-bold my-4">
@@ -57,8 +57,7 @@ const Testimonials = () => {
         </h2>
         <div className="flex justify-center items-center">
           <p className="text-white text-lg md:max-w-[40%] font-semibold">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+          Hear from our students about their experiences at <sapn className="text-customBlue font-bold">YASH CAMPUS</sapn> College and how it has shaped their journey toward a successful healthcare career.
           </p>
         </div>
       </div>

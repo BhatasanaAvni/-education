@@ -1,5 +1,5 @@
 
-import img from "../Assetes/Images/About Us/aboutus01.jpg";
+import img from "../Assetes/Images/About Us/aboutus01.jpeg";
 const LabinchargeData= [
     
   {

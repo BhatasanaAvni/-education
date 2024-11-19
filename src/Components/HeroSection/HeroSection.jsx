@@ -13,19 +13,19 @@ const HeroSection = () => {
       src: Campus11,
       heading: "Welcome to Our Service",
       content:
-        "At BRIGHT, we provide essential medical services to support the health and well-being of our community..",
+        "At YASH CAMPUS, we provide essential medical services to support the health and well-being of our community..",
     },
     {
       src: Campus12,
       heading: "Transform Your Experience",
       content:
-        "At BRIGHT, gain hands-on experience, world-class training, and expert mentorship to shape your future in healthcare.",
+        "At YASH CAMPUS, gain hands-on experience, world-class training, and expert mentorship to shape your future in healthcare.",
     },
     {
       src: Campus13,
       heading: "Discover New Possibilities",
       content:
-        "At BRIGHT, we open doors to a world of opportunities in medical education, research, and healthcare careers, empowering you to make a difference..",
+        "At YASH CAMPUS, we open doors to a world of opportunities in medical education, research, and healthcare careers, empowering you to make a difference..",
     },
     // Add more images here if needed
   ];

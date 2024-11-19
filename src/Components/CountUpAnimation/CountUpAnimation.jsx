@@ -12,8 +12,8 @@ const CountUpAnimation = () => {
   const counters = [
     { target: 2, label: "+ Total Courses", icon: <GiBookmarklet /> },
     { target: 2000, label: "+ Our Students", icon: <PiStudentBold /> },
-    { target: 599, label: "+ Skilled Lecturers", icon: <HiMiniUserGroup /> },
-    { target: 40, label: "+ Win Awards", icon: <FaAward /> },
+    { target: 199, label: "+ Skilled Lecturers", icon: <HiMiniUserGroup /> },
+    { target: 4, label: "+ Win Awards", icon: <FaAward /> },
   ];
 
   // Define inView hook for the counter section

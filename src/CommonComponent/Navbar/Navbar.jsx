@@ -14,9 +14,9 @@ const Navbar = () => {
     { name: "Courses", href: "#Courses" },
     { name: "Teachers", href: "#Teachers" },
     { name: "Gallery", href: "#Gallery" },
-    { name: "Events", href: "#Events" },
+    // { name: "Events", href: "#Events" },
     { name: "Department", href: "#Department" },
-    { name: "Blog", href: "#Blog" },
+    // { name: "Blog", href: "#Blog" },
   ];
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center px-4 py-3">
           <div className="flex items-center gap-5">
             <img src={Logo} alt="Logo" className="w-20" />
-            <div className="flex items-center justify-center border border-white rounded-customRoundedBtn p-2 hidden md:flex">
+            {/* <div className="flex items-center justify-center border border-white rounded-customRoundedBtn p-2 hidden md:flex">
               <input
                 type="search"
                 className="bg-transparent border-none outline-none text-white"
@@ -50,7 +50,7 @@ const Navbar = () => {
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
               <FaSearch className="text-white text-xl ml-2" />
-            </div>
+            </div> */}
           </div>
           <div
             onClick={toggleMenu}
@@ -77,7 +77,7 @@ const Navbar = () => {
               </a>
             ))}
           </ul>
-          <div className="mt-10 flex items-center justify-center border border-white rounded-customRoundedBtn p-2 md:hidden">
+          {/* <div className="mt-10 flex items-center justify-center border border-white rounded-customRoundedBtn p-2 md:hidden">
             <input
               type="search"
               className="bg-transparent border-none outline-none text-white"
@@ -86,7 +86,7 @@ const Navbar = () => {
               onChange={(e) => setSearchQuery(e.target.value)}
             />
             <FaSearch className="text-white text-xl ml-2" />
-          </div>
+          </div> */}
         </div>
       )}
     </>

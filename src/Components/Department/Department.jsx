@@ -25,8 +25,8 @@ const Department = () => {
   const rightSideData = DepartmentData.slice(3, 6);
 
   return (
-    <section className="container overflow-x-hidden py-16" id="Department">
-      <div className="text-center">
+    <section className="container overflow-x-hidden py-16 mt-4" id="Department">
+      <div className="text-center mb-14">
         <div className="flex justify-center items-center text-2xl gap-2 text-customGold">
           <h3 className="flex items-center text-2xl border-b-4 border-customGold gap-4 tracking-[4px] font-semibold">
             <FaBookOpenReader />
@@ -37,18 +37,17 @@ const Department = () => {
           Browse Our <span className="text-customGold">Department</span>
         </h2>
         <div className="flex justify-center items-center">
-          <p className="text-contentColor text-1xl w-full md:max-w-[50%] font-semibold">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
-          </p>
+          <p className="text-contentColor text-1xl w-full md:max-w-[50%] ">
+          <sapn className="text-customBlue font-bold">YASH CAMPUS</sapn> College provides specialized departments focused on equipping students with the skills and knowledge needed for a successful healthcare career.
+                  </p>
         </div>
       </div>
-      <div className="relative z-10 container grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className=" z-10 container grid grid-cols-1 md:grid-cols-2 gap-6 ">
         {/* Left Side Accordion */}
         <div>
-          <Accordion allowZeroExpanded>
+          <Accordion allowZeroExpanded  className="border-none">
             {leftSideData.map((department, index) => (
-              <AccordionItem key={department.id}>
+              <AccordionItem key={department.id} className="mt-5">
                 <AccordionItemHeading>
                   <AccordionItemButton
                     onClick={() => handleAccordionToggle(index)}
@@ -73,10 +72,10 @@ const Department = () => {
           </Accordion>
         </div>
         {/* Right Side Accordion */}
-        <div>
-          <Accordion allowZeroExpanded>
+        <div >
+          <Accordion allowZeroExpanded className="border-none">
             {rightSideData.map((department, index) => (
-              <AccordionItem key={department.id}>
+              <AccordionItem key={department.id} className="mt-5">
                 <AccordionItemHeading>
                   <AccordionItemButton
                     onClick={() => handleAccordionToggle(index + 3)}

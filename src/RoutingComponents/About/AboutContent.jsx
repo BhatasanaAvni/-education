@@ -3,7 +3,7 @@ import bg from "../../Assetes/Images/Testimonial/bg.jpg";
 
 const AboutContent = () => {
   return (
-    <section 
+    <section
       className="relative w-full h-[600px] bg-cover bg-center" // Set the height to a custom value like 400px
       style={{ backgroundImage: `url(${bg})`, backgroundPosition: "center" }} // Ensures the image is centered
     >

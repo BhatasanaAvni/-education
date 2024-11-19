@@ -8,16 +8,16 @@ export const goalCards = [
     title: "Expert Teachers",
     description: "There are many variations of the suffered."
   },
-  {
-    icon: <FaBookMedical />,
-    title: "Course Material",
-    description: "There are many variations of the suffered."
-  },
-  {
-    icon: <MdVideoSettings />,
-    title: "Online Courses",
-    description: "There are many variations of the suffered."
-  },
+  // {
+  //   icon: <FaBookMedical />,
+  //   title: "Course Material",
+  //   description: "There are many variations of the suffered."
+  // },
+  // {
+  //   icon: <MdVideoSettings />,
+  //   title: "Online Courses",
+  //   description: "There are many variations of the suffered."
+  // },
   {
     icon: <FaMoneyBillWave />,
     title: "Affordable Price",

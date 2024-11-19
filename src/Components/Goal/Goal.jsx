@@ -29,8 +29,7 @@ const Goal = () => {
             <span className="text-customGold">Do Our Best</span> For Your Goal
           </h2>
           <p className="text-white text-lg font-semibold mb-3">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+          We are experts in our field, dedicated to helping you achieve your goals through quality education, hands-on training, and personalized support. At <sapn className="text-customBlue font-bold">YASH CAMPUS</sapn> College, your success is our priority.
           </p>
 
           {/* Cards Container */}

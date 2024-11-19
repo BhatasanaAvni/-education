@@ -13,8 +13,3 @@ body{
     
    
 }
-@media(max-Width:1024px){
-    .container{
-        padding: 0 5px 0 5px 0;
-    }
-}
