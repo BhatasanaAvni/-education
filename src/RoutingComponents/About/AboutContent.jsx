@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../../Assetes/Images/Testimonial/bg.jpg";
+import bg from "../../Assetes/Images/About Us/aboutbg.jpeg";
 
 const AboutContent = () => {
   return (
@@ -10,7 +10,7 @@ const AboutContent = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
       <h1 className="relative flex justify-center flex-col items-center top-[50%] z-10 text-white text-4xl font-semibold ">
      ABOUT US
-     <p>  Home &gt;&gt; &nbsp;<span className="text-customGold">AboutUs</span> </p>
+   
       </h1>
      
     </section>

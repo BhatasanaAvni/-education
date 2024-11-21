@@ -1,7 +1,7 @@
 
 import React from "react";
 import bgimg from "../../Assetes/Images/Goal/01.png";
-import goalimg from "../../Assetes/Images/Goal/goal.jpg";
+import goalimg from "../../Assetes/Images/Goal/goal.png";
 import { FaBookOpenReader } from "react-icons/fa6";
 import { goalCards } from "../../Data/GoalData";
 
@@ -29,7 +29,7 @@ const Goal = () => {
             <span className="text-customGold">Do Our Best</span> For Your Goal
           </h2>
           <p className="text-white text-lg font-semibold mb-3">
-          We are experts in our field, dedicated to helping you achieve your goals through quality education, hands-on training, and personalized support. At <sapn className="text-customBlue font-bold">YASH CAMPUS</sapn> College, your success is our priority.
+          We are experts in our field, dedicated to helping you achieve your goals through quality education, hands-on training, and personalized support. At <sapn className="text-customGold font-bold">YASH CAMPUS</sapn> College, your success is our priority.
           </p>
 
           {/* Cards Container */}

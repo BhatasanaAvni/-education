@@ -1,6 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
-import parallexImg from "../../Assetes/Images/CountUp/bg.webp";
+import parallexImg from "../../Assetes/Images/CountUp/bg.jpeg";
 import "./CountUpAnimation.css";
 import { GiBookmarklet } from "react-icons/gi";
 import { PiStudentBold } from "react-icons/pi";
@@ -10,10 +10,10 @@ import { useInView } from 'react-intersection-observer'; // Import the hook
 
 const CountUpAnimation = () => {
   const counters = [
-    { target: 2, label: "+ Total Courses", icon: <GiBookmarklet /> },
-    { target: 2000, label: "+ Our Students", icon: <PiStudentBold /> },
-    { target: 199, label: "+ Skilled Lecturers", icon: <HiMiniUserGroup /> },
-    { target: 4, label: "+ Win Awards", icon: <FaAward /> },
+    { target:2, label: "Total Courses", icon: <GiBookmarklet /> },
+    { target: 10000 , label: "Our Students", icon: <PiStudentBold /> },
+    { target:199 , label: "Skilled Lecturers", icon: <HiMiniUserGroup /> },
+    { target: 4 , label: "Win Awards", icon: <FaAward /> },
   ];
 
   // Define inView hook for the counter section
@@ -48,6 +48,7 @@ const CountUpAnimation = () => {
                       end={counter.target}
                       duration={2.75}
                       separator=","
+                      suffix="+" 
                     />
                   </h1>
                   <p className="text-white uppercase mt-4 font-bold text-42l">

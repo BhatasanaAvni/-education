@@ -27,6 +27,12 @@ const AboutUs = () => {
 
   return (
     <div className="container mx-auto px-4 py-8" id="about">
+        <div className="flex justify-center  items-center text-2xl gap-2 text-customGold ">
+            <div className="flex justify-center items-center border-b-4 border-customGold gap-4 tracking-[4px] font-semibold">
+              <FaBookOpenReader />
+              <h3>About Us</h3>
+            </div>
+          </div>
       <div className="flex flex-col md:flex-row gap-8 items-center">
         {/* Image Section */}
         <div
@@ -70,12 +76,12 @@ const AboutUs = () => {
           className={`w-full max-w-md md:max-w-lg md:w-1/2 text-center md:text-left transition-transform duration-700 ${contentInView ? "transform translate-x-0 opacity-100" : "transform translate-x-10 opacity-0"
             }`}
         >
-          <div className="flex justify-center md:justify-start items-center text-2xl gap-2 text-customGold ">
+          {/* <div className="flex justify-center md:justify-start items-center text-2xl gap-2 text-customGold ">
             <div className="flex justify-center items-center border-b-4 border-customGold gap-4 tracking-[4px] font-semibold">
               <FaBookOpenReader />
               <h3>About Us</h3>
             </div>
-          </div>
+          </div> */}
 
           <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold pt-6 md:pt-10 leading-tight text-customBlue">
             Our Education System{" "}

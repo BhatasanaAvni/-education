@@ -16,7 +16,9 @@ const Navbar = () => {
     { name: "Gallery", href: "#Gallery" },
     // { name: "Events", href: "#Events" },
     { name: "Department", href: "#Department" },
+
     // { name: "Blog", href: "#Blog" },
+    // {name :"Contect Us", href:"#Contect"}
   ];
 
   const toggleMenu = () => setMenuOpen(!menuOpen);

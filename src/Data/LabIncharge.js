@@ -1,12 +1,12 @@
 
-import img from "../Assetes/Images/About Us/aboutus01.jpeg";
+import {Aartii,Archnaben,dhruvikaben,kunjan,mayurbhai,simaben,Riyaben} from "../Assetes/Images/Teachers/Teacher";
 const LabinchargeData= [
     
   {
     id: 12,
-    name: "Chaudhari Aartiben hasmukhbhai",
+    name: "Aartiben H Chaudhari",
     teacherPosition: "Anatomy and Physiology",
-    profileImage: img,
+    profileImage: Aartii,
     Experience: "10 year",
     Education:"B.sc (N)",
     facebook: "https://facebook.com/markbrown",  // Facebook URL
@@ -16,9 +16,9 @@ const LabinchargeData= [
   },
   {
     id: 13,
-    name: "Kamdi Kunjan Ramubhai",
+    name: "Kunjan R Kamdi",
     teacherPosition: "Community Health Nursing",
-    profileImage: img,
+    profileImage: kunjan,
     Experience: "10 year",
     Education:"B.sc (N)",
     facebook: "https://facebook.com/markbrown",  // Facebook URL
@@ -28,9 +28,9 @@ const LabinchargeData= [
   },
   {
     id: 14,
-    name: "Gamit Archnaben Samjibhai",
+    name: "Archnaben S Gamit",
     teacherPosition: "Obstetric and pediatric",
-    profileImage: img,
+    profileImage: Archnaben,
     Experience: "10 year",
     Education:"B.sc (N)",
     facebook: "https://facebook.com/markbrown",  // Facebook URL
@@ -40,9 +40,9 @@ const LabinchargeData= [
   },
   {
     id: 15,
-    name: "Halpati Riyaben Rajubhai",
+    name: "Riyaben R Halpati",
     teacherPosition: "Nutrition",
-    profileImage: img,
+    profileImage: Riyaben,
     Experience: "10 year",
     Education:"B.sc (N)",
     facebook: "https://facebook.com/markbrown",  // Facebook URL
@@ -52,9 +52,9 @@ const LabinchargeData= [
   },
   {
     id: 16,
-    name: "Patel Dhruvikaben nileshbhai",
+    name: "Dhruvikaben N Patel ",
     teacherPosition: "Fundamental of Nursing",
-    profileImage: img,
+    profileImage: dhruvikaben,
     Experience: "10 year",
     Education:"B.sc (N)",
     facebook: "https://facebook.com/markbrown",  // Facebook URL
@@ -64,9 +64,9 @@ const LabinchargeData= [
   },
   {
     id: 17,
-    name: "Patel mayurkumar Rajeshbhaii",
+    name: "Mayurkumar R Patel",
     teacherPosition: "Library",
-    profileImage: img,
+    profileImage: mayurbhai,
     Experience: "10 year",
     Education:"B.sc (N)",
     facebook: "https://facebook.com/markbrown",  // Facebook URL
@@ -76,9 +76,9 @@ const LabinchargeData= [
   },
   {
     id: 18,
-    name: "Patel Simaben Maheshbhai",
+    name: "Simaben M Patel",
     teacherPosition: "Computer lab",
-    profileImage: img,
+    profileImage: simaben,
     Experience: "10 year",
     Education:"B.sc (N)",
     facebook: "https://facebook.com/markbrown",  // Facebook URL

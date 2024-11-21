@@ -12,6 +12,7 @@ import Goal from '../Components/Goal/Goal'
 import Gallery from '../Components/Gallery/Gallery'
 import Events from '../Components/Events/Events'
 import FeaturesSection from '../Components/Features/FeaturesSection'
+import AganwadiVisit from '../Components/Events/AganwadiVisit/AganwadiVisit'
 
 
 const MainPage = () => {
@@ -29,6 +30,7 @@ const MainPage = () => {
    {/* <Events/> */}
    <Department/>
    <Testimonials/>
+   {/* <AganwadiVisit/> */}
    {/* <Blog/> */}
 
     </>

@@ -1,24 +1,36 @@
-import React from 'react';
-import img from "../Assetes/Images/About Us/aboutus01.jpeg";
+
+import {Aartii,Archnaben,dhruvikaben,foramben,Hardipbhai,kunjan,mayurbhai,shefali,simaben,Riyaben,Nileshkumar} from "../Assetes/Images/Teachers/Teacher";
 
 const TeacherData = [
   {
     id: 1,
-    name: "Gamit Nileshkumar Amrutbhai",
-    teacherPosition: "Trusty",
-    profileImage: img,
-    Experience: "-",
-    Education:"-",
+    name: "Nileshkumar A Gamit",
+    teacherPosition: " Chairman ",
+    profileImage: Nileshkumar,
+    Experience: "13 year",
+    Education:"Graduate",
     facebook: "https://facebook.com/johndoe",  // Facebook URL
     instagram: "https://instagram.com/johndoe", // Instagram URL
     whatsapp: "https://wa.me/1234567890", // WhatsApp URL
     phone: "1234567890" // Phone number for call
   },
   {
+    id: 11,
+    name: "Hardipkumar H Gamit",
+    teacherPosition: "Campus Director",
+    profileImage: Hardipbhai,
+    Experience: "10 year",
+    Education:" Graduate",
+    facebook: "https://facebook.com/markbrown",  // Facebook URL
+    instagram: "https://instagram.com/markbrown", // Instagram URL
+    whatsapp: "https://wa.me/9988776655", // WhatsApp URL
+    phone: "9988776655" // Phone number for call
+  },
+  {
     id: 2,
-    name: "Mahla Foramben Sonubhai",
+    name: " Foramben S Mahla",
     teacherPosition: "Principal",
-    profileImage: img,
+    profileImage: foramben,
     Experience: "5 year",
     Education:"B.sc (N), M.sc (N)",
     facebook: "https://facebook.com/janesmith",  // Facebook URL
@@ -28,9 +40,9 @@ const TeacherData = [
   },
   {
     id: 3,
-    name: "Patel Dhruvikaben nileshbhai",
+    name: "Dhruvikaben N Patel",
     teacherPosition: "Vice Principal",
-    profileImage: img,
+    profileImage: dhruvikaben,
     Experience: "3 year",
     Education:"B.sc (N)",
     facebook: "https://facebook.com/emilyjohnson",  // Facebook URL
@@ -40,9 +52,9 @@ const TeacherData = [
   },
   {
     id: 4,
-    name: "Patel Simaben Maheshbhai",
+    name: "Simaben M Patel",
     teacherPosition: "Clerk",
-    profileImage: img,
+    profileImage: simaben,
     Experience: "5 Year",
     Education:"B.A Pass",
     facebook: "https://facebook.com/markbrown",  // Facebook URL
@@ -52,9 +64,9 @@ const TeacherData = [
   },
   {
     id: 5,
-    name: "Chaudhari Aartiben hasmukhbhai",
-    teacherPosition: "Nursing tutor",
-    profileImage: img,
+    name: "Aartiben H Chaudhari ",
+    teacherPosition: "Nursing Tutor",
+    profileImage: Aartii,
     Experience: "1 year",
     Education:"B.sc (N)",
     facebook: "https://facebook.com/markbrown",  // Facebook URL
@@ -64,9 +76,9 @@ const TeacherData = [
   },
   {
     id: 6,
-    name: "Kamdi Kunjan Ramubhai",
-    teacherPosition: "Nursing tutor",
-    profileImage: img,
+    name: "Kunjan R Kamdi",
+    teacherPosition: "Nursing Tutor",
+    profileImage: kunjan,
     Experience: "1 year",
     Education:"B.sc (N)",
     facebook: "https://facebook.com/markbrown",  // Facebook URL
@@ -76,9 +88,9 @@ const TeacherData = [
   },
   {
     id: 7,
-    name: "Patel mayurkumar Rajeshbhai",
-    teacherPosition: "Nursing tutor",
-    profileImage: img,
+    name: "Mayurkumar R Patel",
+    teacherPosition: "Nursing Tutor",
+    profileImage: mayurbhai,
     Experience: "1 year",
     Education:"B.sc (N)",
     facebook: "https://facebook.com/markbrown",  // Facebook URL
@@ -88,9 +100,9 @@ const TeacherData = [
   },
   {
     id: 8,
-    name: "Gamit Archnaben Samjibhai",
-    teacherPosition: "Nursing tutor",
-    profileImage: img,
+    name: "Archnaben S Gamit",
+    teacherPosition: "Nursing Tutor",
+    profileImage: Archnaben,
     Experience: "Fresher",
     Education:"B.sc (N)",
     facebook: "https://facebook.com/markbrown",  // Facebook URL
@@ -100,9 +112,9 @@ const TeacherData = [
   },
   {
     id: 9,
-    name: "Gamit Archnaben Samjibhai",
-    teacherPosition: "Nursing tutor",
-    profileImage: img,
+    name: "Shefalibahen S Birari",
+    teacherPosition: "Nursing Tutor",
+    profileImage: shefali,
     Experience: "Fresher",
     Education:"B.sc (N)",
     facebook: "https://facebook.com/markbrown",  // Facebook URL
@@ -112,9 +124,9 @@ const TeacherData = [
   },
   {
     id: 10,
-    name: "Halpati Riyaben Rajubhai",
-    teacherPosition: "Nursing tutor",
-    profileImage: img,
+    name: "Riyaben R Halpati",
+    teacherPosition: "Nursing Tutor",
+    profileImage: Riyaben,
     Experience: "Fresher",
     Education:"B.sc (N)",
     facebook: "https://facebook.com/markbrown",  // Facebook URL
@@ -122,18 +134,7 @@ const TeacherData = [
     whatsapp: "https://wa.me/9988776655", // WhatsApp URL
     phone: "9988776655" // Phone number for call
   },
-  {
-    id: 11,
-    name: "Gamit Hardipkumar Hemantbhai",
-    teacherPosition: "Campus Director",
-    profileImage: img,
-    Experience: "10 year",
-    Education:"B.sc (N)",
-    facebook: "https://facebook.com/markbrown",  // Facebook URL
-    instagram: "https://instagram.com/markbrown", // Instagram URL
-    whatsapp: "https://wa.me/9988776655", // WhatsApp URL
-    phone: "9988776655" // Phone number for call
-  },
+ 
 
   // LAB INCHARGE
 

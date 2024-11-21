@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import {
-  Campus11,Campus12,Campus13
+  Campus11, Campus12, Campus13
 } from "../../Assetes/Images/HeroSection/Heroimg";
 import Button from "../../CommonComponent/Btn/Button";
 import { Link } from "react-router-dom";
+import { BiSolidMessageSquareDetail } from "react-icons/bi";
 
 
 const HeroSection = () => {
@@ -81,18 +82,23 @@ const HeroSection = () => {
           </h1>
           <p className="text-lg mb-6">{images[currentImageIndex].content}</p>
           <div>
-            <div className="flex gap-2 justify-center flex-wrap">
+            <div className="flex  justify-center flex-wrap">
               <Link to="/about">
                 <Button> ABOUT MORE</Button>
-              </Link>
-              <Link to="/contect">
-                <Button style={{ backGround: "white" }}>Contact</Button>
               </Link>
             </div>
           </div>
         </div>
       </section>
-   
+      {/* <div className="fixed top-1/2 left-0 transform -translate-y-1/2 z-50">
+        <Link to="/contact">
+          <button className="bg-customGold p-2 text-2xl py-[10px] px-[15px] uppercase font-semibold tracking-wider cursor-pointer text-center rounded-customRoundedBtn overflow-hidden z-[1] text-customBlue hover:text-white flex items-center justify-center gap-2
+            transition-colors duration-300  ease-in-out hover:bg-customBlue">
+            <BiSolidMessageSquareDetail />
+          </button>
+        </Link>
+      </div> */}
+
     </>
   );
 };

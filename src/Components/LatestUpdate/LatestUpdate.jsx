@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import { FaBookOpenReader } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa";
-import updateVideo from "../../Assetes/Images/upadateVideo/updated2.mp4";
-import posterImg from "../../Assetes/Images/upadateVideo/posterImg.jpg";
+import updateVideo from "../../Assetes/Images/upadateVideo/vedios.mp4";
+import posterImg from "../../Assetes/Images/upadateVideo/posterLogo.jpg"
 import { useInView } from 'react-intersection-observer'; // Import the hook
 
 const LatestUpdate = () => {
@@ -147,11 +147,17 @@ const LatestUpdate = () => {
             {!isPlaying && (
               <button
                 onClick={togglePlay}
-                className="play-btn absolute inset-0 flex items-center text-customGold justify-center text-2xl bg-opacity-90"
+                className="play-btn absolute inset-0 
+               top-[43.2%] left-[49%] transform -translate-x-1/2 -translate-y-1/2 
+               flex items-center justify-center
+               h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20
+               bg-white text-customGold text-xl md:text-2xl lg:text-3xl
+               rounded-full bg-opacity-90"
               >
                 <FaPlay />
               </button>
             )}
+
           </div>
         </div>
 
@@ -170,6 +176,7 @@ const LatestUpdate = () => {
                     className="w-full h-full object-cover rounded-lg"
                     controls
                     autoPlay
+
                   />
                   <button
                     onClick={closeModal}

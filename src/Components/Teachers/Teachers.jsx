@@ -28,13 +28,13 @@ const Teachers = () => {
     >
       <div className="text-center">
         <div className="flex justify-center items-center text-2xl gap-2 text-customGold">
-          <h3 className="flex items-center justify-center text-2xl border-b-4 border-customGold gap-4 tracking-[4px] font-semibold">
+          <h3 className="flex items-center justify-center text-2xl border-b-4 border-customGold gap-4 tracking-[4px] font-semibold capitalize">
             <FaBookOpenReader />
-            Our Teachers
+            our faculties
           </h3>
         </div>
         <h2 className="text-5xl font-bold my-4 text-customBlue">
-          Meet With Our <span className="text-customGold">Teachers</span>
+          Meet With Our <span className="text-customGold">Faculties</span>
         </h2>
         <p className="text-contentColor w-full md:max-w-[40%] mx-auto">
           Meet the experienced and dedicated educators at{" "}
@@ -50,8 +50,8 @@ const Teachers = () => {
         </div>
 
         <div className="flex items-center justify-center mt-8">
-          <Button onClick={handleMoreTeachers} className="mt-8">
-            MORE FACULTY
+          <Button onClick={handleMoreTeachers} className="mt-8 uppercase">
+          our faculties
           </Button>
         </div>
       </div>

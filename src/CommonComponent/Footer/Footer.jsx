@@ -31,37 +31,45 @@ const Footer = () => {
               suffered alteration in some form by injected humour words
               believable.
             </p>
-            <div className="mt-4 space-y-2 cursor-pointer">
-              <a href="tel:+98987 87875" className="flex items-center">
-                <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
-                  <IoCallOutline />
-                </span>
-                +91 98987 87875
-              </a>
-             
-              <a
-                className="flex items-center"
-                href="https://maps.app.goo.gl/7tMDbFZNhPp1g1U98" 
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
-                  <IoLocationOutline />
-                </span>
-                Mahuwash, Sara Rd, Vansda, Gujarat 396580
-              </a>
-
-              <a href="mailto:info@yashcampus.in" className="flex items-center" >
-                <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
-                  <MdOutlineEmail />
-                </span>
-                info@yashcampus.in
-              </a>
-            </div>
           </div>
+          <div className="p-6">
+            <div>
+              <h3 className="text-2xl md:text-3xl font-semibold text-customGold pb-2">
+                <u>Quick Links</u>
+              </h3>
+              </div>
+              <div className="mt-4 space-y-2 cursor-pointer">
+                <a href="tel:+98987 87875" className="flex items-center">
+                  <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
+                    <IoCallOutline />
+                  </span>
+                  +91 98987 87875
+                </a>
+
+                <a
+                  className="flex items-center"
+                  href="https://maps.app.goo.gl/7tMDbFZNhPp1g1U98"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
+                    <IoLocationOutline />
+                  </span>
+                  Mahuwash, Sara Rd, Vansda, Gujarat 396580
+                </a>
+
+                <a href="mailto:info@yashcampus.in" className="flex items-center" >
+                  <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
+                    <MdOutlineEmail />
+                  </span>
+                  info@yashcampus.in
+                </a>
+              </div>
+            </div>
+   
 
           {/* Quick Links */}
-          <div className="p-6">
+          {/* <div className="p-6">
             <h3 className="text-2xl md:text-3xl font-semibold text-customGold pb-2">
               <u>Quick Links</u>
             </h3>
@@ -85,7 +93,7 @@ const Footer = () => {
                 Update News
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Our Campus */}
           <div className="p-6">
@@ -145,7 +153,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto mt-10 text-center border-t border-customGold pt-4 flex justify-between items-center flex-wrap">
           <p className="text-xl text-white">
             &copy; Copyright 2024{" "}
-            <span className="text-customGold " href="#">Yash Campus</span>. All Rights Reserved. D&D by <a href="https://vaanyawebservice.com/ " className="text-customGold">VWS</a>
+            <a className="text-customGold"    href="#">Yash Campus</a>. All Rights Reserved. D&D by <a href="https://vaanyawebservice.com/ " className="text-customGold">VWS</a>
           </p>
           <div className="flex justify-center space-x-4 mt-4 text-xl">
             <a
@@ -156,7 +164,7 @@ const Footer = () => {
               <FaFacebookF />
             </a>
             <a
-            target="_blank"
+              target="_blank"
               href="https://www.instagram.com/yashcampuss/"
               className="text-customGold hover:text-white p-[8px] bg-white hover:bg-customGold duration-500 rounded-customRounded"
             >
@@ -171,13 +179,13 @@ const Footer = () => {
               <FaWhatsapp />
             </a>
 
-            <a
-            target="_blank"
+            {/* <a
+              target="_blank"
               href="#"
               className="text-customGold hover:text-white p-[8px] bg-white hover:bg-customGold duration-500 rounded-customRounded"
             >
               <FaYoutube />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

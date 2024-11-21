@@ -7,7 +7,7 @@ const ContactCard = ({ icon: Icon, title, text, link }) => {
         <Icon />
       </a>
       <h2 className="text-xl mt-4 text-customBlue">{title}</h2>
-      <p className="text-xs text-center mt-2 text-customBlue">{text}</p>
+      <p className="text-[15px] text-center mt-2 text-customBlue">{text}</p>
     </div>
   );
 };

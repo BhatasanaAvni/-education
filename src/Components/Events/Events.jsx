@@ -2,15 +2,15 @@
 import React from "react";
 import { FaBookOpenReader } from "react-icons/fa6";
 import EventCard from "./EventCard.jsx";
-import img1 from "../../Assetes/Images/Gallery/img01.jpeg";
-import img2 from "../../Assetes/Images/Gallery/img02.jpeg";
-import img3 from "../../Assetes/Images/Gallery/img03.webp";
-import img4 from "../../Assetes/Images/Gallery/img04.webp";
+import img1 from "../../Assetes/Images/Gallery/img21.jpg";
+import img2 from "../../Assetes/Images/Gallery/img22.jpg";
+import img3 from "../../Assetes/Images/Gallery/img24.jpg";
+import img4 from "../../Assetes/Images/Gallery/img23.jpg";
 import { useNavigate } from "react-router-dom";
 
 const eventData = [
   {
-    location: "Surat",
+    EventName: "Aganwadi Visit",
     image: img1,
     date: "16 Jun 2024",
     time: "10:00 AM - 04:00 PM",
@@ -18,7 +18,7 @@ const eventData = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
-    location: "Mumbai",
+    EventName: "Navratri Celebration",
     image: img2,
     date: "20 Jul 2024",
     time: "09:00 AM - 03:00 PM",
@@ -26,7 +26,7 @@ const eventData = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
-    location: "Delhi",
+    EventName: "CMTC",
     image: img3,
     date: "25 Aug 2024",
     time: "11:00 AM - 05:00 PM",
@@ -34,7 +34,7 @@ const eventData = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
-    location: "Bangalore",
+    EventName: "Diwali",
     image: img4,
     date: "30 Sep 2024",
     time: "12:00 PM - 06:00 PM",
@@ -42,7 +42,7 @@ const eventData = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
-    location: "Delhi",
+    EventName: "Gandhi Jayanti",
     image: img3,
     date: "25 Aug 2024",
     time: "11:00 AM - 05:00 PM",
@@ -50,7 +50,7 @@ const eventData = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
-    location: "Bangalore",
+    EventName: "Children's day",
     image: img4,
     date: "30 Sep 2024",
     time: "12:00 PM - 06:00 PM",

@@ -9,7 +9,8 @@ const FeaturesSection = () => {
       icon: <FaGraduationCap size={30} />,
       title: "Scholarship Facility",
       number: "01",
-      description: "Yash Campus College offers scholarships to support talented and deserving students. Unlock your potential with financial assistance for a brighter future."
+      // description: "The Government of India has implemented the Post-Matric Scholarship Scheme for students belonging to Scheduled Castes (SC) and Scheduled Tribes (ST). Under this scheme, students can use the Free Ship Card to avail free education at any private college."
+      description: "The Government of India’s Post-Matric Scholarship Scheme offers SC and ST students a Free Ship Card, allowing them to access free education at private colleges."
     },
     {
       icon: <FaBook size={30} />,
@@ -22,6 +23,12 @@ const FeaturesSection = () => {
       title: "Student Support",
       number: "03",
       description: "Yash Campus College offers complete support through academic counseling, career guidance, and extracurricular activities, ensuring every student’s success."
+    },
+    {
+      icon: <FaUsers size={30} />,
+      title: "Hostel Facility",
+      number: "04",
+      description: "Yash Campus offers safe, well-equipped hostels with 24/7 security, Wi-Fi, meals, and study spaces for a comfortable student experience."
     }
   ];
 

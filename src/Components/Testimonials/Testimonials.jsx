@@ -1,7 +1,7 @@
 import React from "react";
 import { FaBookOpenReader } from "react-icons/fa6";
 import Slider from "react-slick";
-import bgimg from "../../Assetes/Images/Testimonial/bg.jpg";
+import bgimg from "../../Assetes/Images/Testimonial/bg.png";
 import TestimonialsCard from "./TestimonialsCard";
 import { TestimonialsData } from "../../Data/TestimonialsData"; 
 import "slick-carousel/slick/slick.css"; 
@@ -57,7 +57,7 @@ const Testimonials = () => {
         </h2>
         <div className="flex justify-center items-center">
           <p className="text-white text-lg md:max-w-[40%] font-semibold">
-          Hear from our students about their experiences at <sapn className="text-customBlue font-bold">YASH CAMPUS</sapn> College and how it has shaped their journey toward a successful healthcare career.
+          Hear from our students about their experiences at <sapn className="text-gray-600 font-bold">YASH CAMPUS</sapn> College and how it has shaped their journey toward a successful healthcare career.
           </p>
         </div>
       </div>
@@ -73,6 +73,7 @@ const Testimonials = () => {
               rating={testimonial.rating}
               img={testimonial.img}
               position={testimonial.position}
+              Coures={testimonial.Coures}
             />
           ))}
         </Slider>

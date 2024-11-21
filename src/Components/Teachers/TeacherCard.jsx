@@ -15,13 +15,13 @@ const TeacherCard = ({
 }) => {
   return (
     <div
-      className={`p-7 bg-white rounded-customRoundedBtn relative overflow-hidden group transform transition-transform duration-300 hover:translate-y-[-10px] ${className} h-[430px]`}
+      className={`p-7 bg-white rounded-customRoundedBtn relative overflow-hidden group transform transition-transform duration-300 hover:translate-y-[-10px] ${className} h-[400px]`}
     >
       <div className="relative w-full h-48 overflow-hidden rounded-customRoundedBtn">
         <img
           src={profileImage}
           alt={name}
-          className="w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-110"
+          className="w-full h-full object-cover transition-transform duration-300  transform group-hover:scale-110"
         />
       </div>
       <div className="mt-4 text-center">
