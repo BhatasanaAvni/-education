@@ -13,7 +13,7 @@ import Gallery from '../Components/Gallery/Gallery'
 import Events from '../Components/Events/Events'
 import FeaturesSection from '../Components/Features/FeaturesSection'
 import AganwadiVisit from '../Components/Events/AganwadiVisit/AganwadiVisit'
-
+import ContectForm from "../Auth/contactForm/contactForm"
 
 const MainPage = () => {
   return (
@@ -32,7 +32,7 @@ const MainPage = () => {
    <Testimonials/>
    {/* <AganwadiVisit/> */}
    {/* <Blog/> */}
-
+<ContectForm/>
     </>
 
   )

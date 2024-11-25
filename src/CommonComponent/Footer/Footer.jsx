@@ -22,7 +22,7 @@ const Footer = () => {
     >
       <div className="absolute inset-0 bg-customBlue z-0"></div>
       <div className="relative z-10">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Description */}
           <div className="p-6">
             <img src={Logo} alt="" className="w-28" />
@@ -37,36 +37,36 @@ const Footer = () => {
               <h3 className="text-2xl md:text-3xl font-semibold text-customGold pb-2">
                 <u>Quick Links</u>
               </h3>
-              </div>
-              <div className="mt-4 space-y-2 cursor-pointer">
-                <a href="tel:+98987 87875" className="flex items-center">
-                  <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
-                    <IoCallOutline />
-                  </span>
-                  +91 98987 87875
-                </a>
-
-                <a
-                  className="flex items-center"
-                  href="https://maps.app.goo.gl/7tMDbFZNhPp1g1U98"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
-                    <IoLocationOutline />
-                  </span>
-                  Mahuwash, Sara Rd, Vansda, Gujarat 396580
-                </a>
-
-                <a href="mailto:info@yashcampus.in" className="flex items-center" >
-                  <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
-                    <MdOutlineEmail />
-                  </span>
-                  info@yashcampus.in
-                </a>
-              </div>
             </div>
-   
+            <div className="mt-4 space-y-2 cursor-pointer">
+              <a href="tel:+98987 87875" className="flex items-center">
+                <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
+                  <IoCallOutline />
+                </span>
+                +91 98987 87875
+              </a>
+
+              <a
+                className="flex items-center"
+                href="https://maps.app.goo.gl/7tMDbFZNhPp1g1U98"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
+                  <IoLocationOutline />
+                </span>
+                Mahuwash, Sara Rd, Vansda, Gujarat 396580
+              </a>
+
+              <a href="mailto:info@yashcampus.in" className="flex items-center" >
+                <span className="mr-2 text-lg p-[8px] bg-customGold rounded-customRounded">
+                  <MdOutlineEmail />
+                </span>
+                info@yashcampus.in
+              </a>
+            </div>
+          </div>
+
 
           {/* Quick Links */}
           {/* <div className="p-6">
@@ -96,7 +96,7 @@ const Footer = () => {
           </div> */}
 
           {/* Our Campus */}
-          <div className="p-6">
+          {/* <div className="p-6">
             <h3 className="text-2xl md:text-3xl font-semibold text-customGold pb-2">
               <u>Our Campus</u>
             </h3>
@@ -120,7 +120,7 @@ const Footer = () => {
                 Facility Services
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Newsletter */}
           <div className="p-6">
@@ -153,7 +153,8 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto mt-10 text-center border-t border-customGold pt-4 flex justify-between items-center flex-wrap">
           <p className="text-xl text-white">
             &copy; Copyright 2024{" "}
-            <a className="text-customGold"    href="#">Yash Campus</a>. All Rights Reserved. D&D by <a href="https://vaanyawebservice.com/ " className="text-customGold">VWS</a>
+            <a className="text-customGold" href="#">Yash Campus</a>. All Rights Reserved.
+            <a href="https://vaanyawebservice.com/ " className="text-customGold">VWS</a>
           </p>
           <div className="flex justify-center space-x-4 mt-4 text-xl">
             <a

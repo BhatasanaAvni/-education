@@ -14,8 +14,10 @@ const Navbar = () => {
     { name: "Courses", href: "#Courses" },
     { name: "Teachers", href: "#Teachers" },
     { name: "Gallery", href: "#Gallery" },
+    
     // { name: "Events", href: "#Events" },
     { name: "Department", href: "#Department" },
+    { name: "Contact Us", href: "#Contact" },
 
     // { name: "Blog", href: "#Blog" },
     // {name :"Contect Us", href:"#Contect"}
