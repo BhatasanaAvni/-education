@@ -74,13 +74,13 @@ const CoursesCard = ({ course }) => {
         {/* PDF Download Button */}
  
 
-        <a
+        {/* <a
           href={pdf} // The PDF link from the course data
           download
           className=" flex items-center justify-center gap-3 bg-customGold text-white p-2 rounded-full hover:bg-customBlue hover:text-white transition-colors duration-300 mt-3 md:mt-0"
           >
           Download Documents <TbCertificate className="text-xl" />
-        </a>
+        </a> */}
        
       </div>
     </div>

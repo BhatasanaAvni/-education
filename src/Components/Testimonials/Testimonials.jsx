@@ -57,7 +57,7 @@ const Testimonials = () => {
         </h2>
         <div className="flex justify-center items-center">
           <p className="text-white text-lg md:max-w-[40%] font-semibold">
-          Hear from our students about their experiences at <sapn className="text-gray-600 font-bold">YASH CAMPUS</sapn> College and how it has shaped their journey toward a successful healthcare career.
+          Hear from our students about their experiences at <sapn className="text-customGold font-bold">YASH CAMPUS</sapn> College and how it has shaped their journey toward a successful healthcare career.
           </p>
         </div>
       </div>
