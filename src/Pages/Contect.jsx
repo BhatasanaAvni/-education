@@ -3,10 +3,12 @@ import bg from "../Assetes/Images/contectbg.jpeg";
 import ContectData from "../Auth/contactForm/contactFormData"
 import MapEmbed from "../Auth/contactForm/MapEmbed/MapEmbed"
 import ContactForm1 from '../Auth/contactForm/contactForm';
+import Navbar from '../CommonComponent/Navbar/Navbar';
+import Footer from '../CommonComponent/Footer/Footer';
 const Contect = () => {
   return (
     <>
-
+<Navbar/>
       <section
         className="relative w-full h-[600px] bg-cover bg-center" // Set the height to a custom value like 400px
         style={{ backgroundImage: `url(${bg})`, backgroundPosition: "center" }} // Ensures the image is centered
@@ -26,6 +28,7 @@ const Contect = () => {
 
         <MapEmbed />
       </div>
+      <Footer/>
     </>
   )
 }

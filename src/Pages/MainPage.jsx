@@ -14,25 +14,29 @@ import Events from '../Components/Events/Events'
 import FeaturesSection from '../Components/Features/FeaturesSection'
 import AganwadiVisit from '../Components/Events/AganwadiVisit/AganwadiVisit'
 import ContectForm from "../Auth/contactForm/contactForm"
+import Navbar from '../CommonComponent/Navbar/Navbar'
+import Footer from '../CommonComponent/Footer/Footer'
 
 const MainPage = () => {
   return (
     <>
-   <HeroSection/>
-   <FeaturesSection/>
-   <AboutUs/>
-   <CountUpAnimation/>
-   <OurCourses/>
-   <LatestUpdate/>
-   <Teachers/>
-   <Goal/>
-   <Gallery/>
-   {/* <Events/> */}
-   <Department/>
-   <Testimonials/>
-   {/* <AganwadiVisit/> */}
-   {/* <Blog/> */}
-<ContectForm/>
+      <Navbar />
+      <HeroSection />
+      <FeaturesSection />
+      <AboutUs />
+      <CountUpAnimation />
+      <OurCourses />
+      <LatestUpdate />
+      <Teachers />
+      <Goal />
+      <Gallery />
+      {/* <Events/> */}
+      <Department />
+      <Testimonials />
+      {/* <AganwadiVisit/> */}
+      {/* <Blog/> */}
+      <ContectForm />
+      <Footer />
     </>
 
   )
